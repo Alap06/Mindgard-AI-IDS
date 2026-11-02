@@ -1,0 +1,6 @@
+duration,protocol_type,service,flag,src_bytes,dst_bytes,count,srv_count,serror_rate,rerror_rate,same_srv_rate,diff_srv_rate
+0,tcp,private,S0,0,0,150,10,1.0,0.0,0.1,0.9
+0,tcp,private,S0,0,0,250,20,1.0,0.0,0.08,0.95
+0,tcp,private,REJ,0,0,50,5,0.0,1.0,0.1,0.9
+0,icmp,eco_i,SF,20,0,100,10,0.0,0.0,1.0,0.0
+150,tcp,telnet,RSTO,0,0,1,1,0.0,1.0,1.0,0.0

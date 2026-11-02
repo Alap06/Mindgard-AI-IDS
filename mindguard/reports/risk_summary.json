@@ -1,0 +1,20 @@
+{
+  "total": 98805,
+  "mean_risk_score": 25.4,
+  "max_risk_score": 93.7,
+  "risk_levels": {
+    "CRITICAL": 14,
+    "HIGH": 21870,
+    "MEDIUM": 556,
+    "LOW": 76365
+  },
+  "attack_distribution": {
+    "UNKNOWN_ATTACK": 21814,
+    "normal": 19450,
+    "DoS": 56916,
+    "Probe": 393,
+    "R2L": 220,
+    "U2R": 12
+  },
+  "alert_rate": 22.1
+}

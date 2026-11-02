@@ -1,0 +1,113 @@
+======================================================================
+CYBERSENTINEL — DATA AUDIT REPORT
+======================================================================
+
+Train shape: (494021, 42)
+Test shape:  (4898431, 42)
+
+────────────────────────────────────────
+MISSING VALUES
+────────────────────────────────────────
+  No missing values in train set ✓
+  No missing values in test set ✓
+
+────────────────────────────────────────
+DATA TYPES
+────────────────────────────────────────
+  Numeric columns: 38
+  Object columns:  4
+
+────────────────────────────────────────
+CATEGORICAL COLUMNS
+────────────────────────────────────────
+  protocol_type:
+    Train unique: 3  |  Test unique: 3
+  service:
+    Train unique: 66  |  Test unique: 70
+    ⚠ Values in test but NOT in train: {'http_2784', 'aol', 'http_8001', 'harvest'}
+  flag:
+    Train unique: 11  |  Test unique: 11
+
+────────────────────────────────────────
+ZERO-VARIANCE FEATURES
+────────────────────────────────────────
+  ✗ num_outbound_cmds (constant = 0)
+  ✗ is_host_login (constant = 0)
+
+  Near-zero variance:
+    land: std=0.006673, unique=2
+    urgent: std=0.005510, unique=4
+    su_attempted: std=0.007793, unique=3
+
+────────────────────────────────────────
+RAW LABEL DISTRIBUTION (TRAIN)
+────────────────────────────────────────
+  smurf.                           280790  (56.84%)
+  neptune.                         107201  (21.70%)
+  normal.                           97278  (19.69%)
+  back.                              2203  ( 0.45%)
+  satan.                             1589  ( 0.32%)
+  ipsweep.                           1247  ( 0.25%)
+  portsweep.                         1040  ( 0.21%)
+  warezclient.                       1020  ( 0.21%)
+  teardrop.                           979  ( 0.20%)
+  pod.                                264  ( 0.05%)
+  nmap.                               231  ( 0.05%)
+  guess_passwd.                        53  ( 0.01%)
+  buffer_overflow.                     30  ( 0.01%)
+  land.                                21  ( 0.00%)
+  warezmaster.                         20  ( 0.00%)
+  imap.                                12  ( 0.00%)
+  rootkit.                             10  ( 0.00%)
+  loadmodule.                           9  ( 0.00%)
+  ftp_write.                            8  ( 0.00%)
+  multihop.                             7  ( 0.00%)
+  phf.                                  4  ( 0.00%)
+  perl.                                 3  ( 0.00%)
+  spy.                                  2  ( 0.00%)
+
+────────────────────────────────────────
+ATTACK CATEGORY DISTRIBUTION
+────────────────────────────────────────
+  Unmapped labels — Train: 0, Test: 0
+
+  Train:
+    DoS          391458  (79.24%)  ███████████████████████████████████████
+    Probe          4107  ( 0.83%)  
+    R2L            1126  ( 0.23%)  
+    U2R              52  ( 0.01%)  
+    normal        97278  (19.69%)  █████████
+
+  Test:
+    DoS         3883370  (79.28%)  ███████████████████████████████████████
+    Probe         41102  ( 0.84%)  
+    R2L            1126  ( 0.02%)  
+    U2R              52  ( 0.00%)  
+    normal       972781  (19.86%)  █████████
+
+────────────────────────────────────────
+NUMERICAL FEATURE RANGES (top outlier candidates)
+────────────────────────────────────────
+                    min         mean            std          max
+src_bytes           0.0  3025.610296  988218.101050  693375640.0
+dst_bytes           0.0   868.532425   33040.001252    5155468.0
+duration            0.0    47.979302     707.746472      58329.0
+num_root            0.0     0.011352       2.012718        993.0
+num_compromised     0.0     0.010212       1.798326        884.0
+count               0.0   332.285690     213.147412        511.0
+srv_count           0.0   292.906557     246.322817        511.0
+dst_host_count      0.0   232.470778      64.745380        255.0
+dst_host_srv_count  0.0   188.665670     106.040437        255.0
+hot                 0.0     0.034519       0.782103         30.0
+
+────────────────────────────────────────
+INF VALUES CHECK
+────────────────────────────────────────
+  Train inf count: 0
+  Test inf count:  0
+
+────────────────────────────────────────
+DUPLICATE ROWS
+────────────────────────────────────────
+  Train duplicates: 348435 (70.53%)
+  Test duplicates:  3823439 (78.05%)

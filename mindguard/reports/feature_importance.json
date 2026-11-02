@@ -1,0 +1,102 @@
+[
+  {
+    "rank": 1,
+    "feature": "service_telnet",
+    "importance": 0.11982616037130356
+  },
+  {
+    "rank": 2,
+    "feature": "service_http",
+    "importance": 0.10874554514884949
+  },
+  {
+    "rank": 3,
+    "feature": "is_guest_login",
+    "importance": 0.0720260888338089
+  },
+  {
+    "rank": 4,
+    "feature": "service_eco_i",
+    "importance": 0.05662338063120842
+  },
+  {
+    "rank": 5,
+    "feature": "count",
+    "importance": 0.05205382779240608
+  },
+  {
+    "rank": 6,
+    "feature": "service_ftp_data",
+    "importance": 0.05136542394757271
+  },
+  {
+    "rank": 7,
+    "feature": "service_smtp",
+    "importance": 0.04328056052327156
+  },
+  {
+    "rank": 8,
+    "feature": "root_shell",
+    "importance": 0.039688970893621445
+  },
+  {
+    "rank": 9,
+    "feature": "num_failed_logins",
+    "importance": 0.03485174477100372
+  },
+  {
+    "rank": 10,
+    "feature": "srv_count",
+    "importance": 0.027769682928919792
+  },
+  {
+    "rank": 11,
+    "feature": "protocol_type_icmp",
+    "importance": 0.02710474468767643
+  },
+  {
+    "rank": 12,
+    "feature": "diff_srv_rate",
+    "importance": 0.02591761387884617
+  },
+  {
+    "rank": 13,
+    "feature": "protocol_type_udp",
+    "importance": 0.025588057935237885
+  },
+  {
+    "rank": 14,
+    "feature": "srv_count_ratio",
+    "importance": 0.022518407553434372
+  },
+  {
+    "rank": 15,
+    "feature": "bytes_ratio",
+    "importance": 0.020970270037651062
+  },
+  {
+    "rank": 16,
+    "feature": "dst_host_serror_rate",
+    "importance": 0.020124763250350952
+  },
+  {
+    "rank": 17,
+    "feature": "flag_RSTO",
+    "importance": 0.018442656844854355
+  },
+  {
+    "rank": 18,
+    "feature": "service_ftp",
+    "importance": 0.01840575784444809
+  },
+  {
+    "rank": 19,
+    "feature": "service_urp_i",
+    "importance": 0.013773869723081589
+  },
+  {
+    "rank": 20,
+    "feature": "num_file_creations",
+    "importance": 0.013768281787633896
+  }
+]

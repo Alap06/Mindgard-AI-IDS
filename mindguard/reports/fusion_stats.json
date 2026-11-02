@@ -1,0 +1,14 @@
+{
+  "total": 98805,
+  "unknown_attacks": 21814,
+  "decision_paths": {
+    "RULE1_UNKNOWN": 21814,
+    "RULE3_THRESHOLD_HIERARCHY": 76991
+  },
+  "alert_levels": {
+    "LOW": 19273,
+    "MEDIUM": 321,
+    "HIGH": 57014,
+    "CRITICAL": 22197
+  }
+}

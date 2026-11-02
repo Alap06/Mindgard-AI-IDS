@@ -1,0 +1,104 @@
+{
+  "pipeline_version": "v4",
+  "system": "Mindgard Hybrid Intelligent IDS",
+  "pipeline_time_seconds": 635.3,
+  "architecture": {
+    "layer_1": "XGBoost Classifier (known attacks)",
+    "layer_2": "Isolation Forest (anomaly/zero-day detection)",
+    "layer_3": "Behavioral Analysis Engine (temporal patterns)",
+    "fusion": "Decision Fusion with open-set recognition",
+    "risk": "Advanced multi-signal risk scoring",
+    "explainability": "SHAP TreeExplainer"
+  },
+  "dataset": "KDD Cup 1999 (corrected 10%)",
+  "n_features_original": 117,
+  "n_features_engineered": 125,
+  "n_train_samples": 395216,
+  "n_test_samples": 98805,
+  "classes": [
+    "DoS",
+    "Probe",
+    "R2L",
+    "U2R",
+    "normal",
+    "UNKNOWN_ATTACK"
+  ],
+  "threshold_results": {
+    "optimal_thresholds": {
+      "DoS": 0.08471571643624082,
+      "Probe": 0.8769759705871183,
+      "R2L": 0.25899795821774757,
+      "U2R": 0.940734236376165,
+      "normal": 0.05077429185019752
+    }
+  },
+  "fusion_stats": {
+    "total": 98805,
+    "unknown_attacks": 21814,
+    "decision_paths": {
+      "RULE1_UNKNOWN": 21814,
+      "RULE3_THRESHOLD_HIERARCHY": 76991
+    },
+    "alert_levels": {
+      "LOW": 19273,
+      "MEDIUM": 321,
+      "HIGH": 57014,
+      "CRITICAL": 22197
+    }
+  },
+  "risk_summary": {
+    "total": 98805,
+    "mean_risk_score": 25.4,
+    "max_risk_score": 93.7,
+    "risk_levels": {
+      "CRITICAL": 14,
+      "HIGH": 21870,
+      "MEDIUM": 556,
+      "LOW": 76365
+    },
+    "attack_distribution": {
+      "UNKNOWN_ATTACK": 21814,
+      "normal": 19450,
+      "DoS": 56916,
+      "Probe": 393,
+      "R2L": 220,
+      "U2R": 12
+    },
+    "alert_rate": 22.1
+  },
+  "metrics": {
+    "macro_f1": 0.9784295961329568,
+    "accuracy": 0.9998571261576028,
+    "macro_precision": 0.9642778823379698,
+    "macro_recall": 0.9956217911589078,
+    "roc_auc_macro": 0.999992700924962
+  },
+  "cv_results": null,
+  "top_5_features": [
+    {
+      "rank": 1,
+      "feature": "service_telnet",
+      "importance": 0.12827080488204956
+    },
+    {
+      "rank": 2,
+      "feature": "service_http",
+      "importance": 0.11996195465326309
+    },
+    {
+      "rank": 3,
+      "feature": "is_guest_login",
+      "importance": 0.08677712082862854
+    },
+    {
+      "rank": 4,
+      "feature": "count",
+      "importance": 0.06116378307342529
+    },
+    {
+      "rank": 5,
+      "feature": "service_ftp_data",
+      "importance": 0.05609144642949104
+    }
+  ]
+}

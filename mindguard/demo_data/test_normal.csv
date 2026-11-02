@@ -1,0 +1,6 @@
+duration,protocol_type,service,flag,src_bytes,dst_bytes,count,srv_count,serror_rate,rerror_rate,same_srv_rate,diff_srv_rate
+0,tcp,http,SF,215,45000,1,1,0.0,0.0,1.0,0.0
+0,tcp,http,SF,220,15000,2,2,0.0,0.0,1.0,0.0
+0,udp,domain_u,SF,45,45,1,1,0.0,0.0,1.0,0.0
+0,icmp,eco_i,SF,8,0,1,1,0.0,0.0,1.0,0.0
+2,tcp,smtp,SF,600,300,1,1,0.0,0.0,1.0,0.0

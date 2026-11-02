@@ -1,0 +1,29 @@
+# Datasets and Archives
+dataset/
+archive*/
+*.zip
+*.gz
+*.tar
+*.tar.gz
+
+# Python cache & compiled
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment and sensitive keys
+.env
+.env.local
+*.env
+
+# OS specific
+.DS_Store
+Thumbs.db
+Desktop.ini
